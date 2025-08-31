@@ -4,7 +4,18 @@
   "manifest_version": 3,
   "description": "Esta extensão serve para transformar seus textos em letras MAIUSCULAS ou minúsculas.",  
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/tt-icon16.png",
+      "48": "icons/tt-icon48.png",
+      "128": "icons/tt-icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/tt-icon16.png",
+    "48": "icons/tt-icon48.png",
+    "128": "icons/tt-icon128.png",
+    "512": "icons/tt-logo.png"
   }
 }
 
