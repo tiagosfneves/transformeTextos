@@ -9,12 +9,13 @@
 .container-pai {
     width: 200px;
     height: 200px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -31,6 +32,7 @@
 .input-text {
     width: 160px;
     padding: 1px 3px;
+    border: 1px solid #4c4c4d;
     outline: none;
 }
 
@@ -54,6 +56,8 @@
 .result {
     width: 160px;
     padding: 1px 3px;
+    background-color: #fff;
+    border: 1px solid #4c4c4d;
     outline: none;
     resize: none;
 }

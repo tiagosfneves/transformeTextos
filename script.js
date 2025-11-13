@@ -1,10 +1,11 @@
+// Programa com Funções como parâmetros
 document.addEventListener("DOMContentLoaded", function() {    
-    document.querySelector("#btnMaiuscula").addEventListener("click", function() {
-        let inputText = document.querySelector("#input-text").value;
-        document.querySelector("#result").innerHTML = inputText.toUpperCase();
+    document.getElementById("btnMaiuscula").addEventListener("click", function() {
+        let inputText = document.getElementById("input-text").value;
+        document.getElementById("result").innerHTML = inputText.toUpperCase();
     });
-    document.querySelector("#btnMinuscula").addEventListener("click", function() {
-        let inputText = document.querySelector("#input-text").value;
-        document.querySelector("#result").innerHTML = inputText.toLowerCase();
+    document.getElementById("btnMinuscula").addEventListener("click", function() {
+        let inputText = document.getElementById("input-text").value;
+        document.getElementById("result").innerHTML = inputText.toLowerCase();
     });
 });
