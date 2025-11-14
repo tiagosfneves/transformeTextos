@@ -19,20 +19,35 @@
 
 <body>
     <div class="container-pai">
-        <header class="cabecalho">            
-            <a href="https://tiagoneves.com.br/" target="_blank"><img src="./icons/tt-icon16.png" alt="Logo da extensão transforme textos apenas as iniciais tt"></a>
-            <h1 class="titulo">TRANSFORME textos </h1>
+        <header class="cabecalho">
+            <a href="https://tiagoneves.com.br/" target="_blank"><img src="./icons/tt-icon16.png"
+                    alt="Logo da extensão transforme textos apenas as iniciais tt"></a>
+            <h1 class="titulo">TRANSFORME
+                textos </h1>
         </header>
-        
+
         <input type="text" name="text" id="input-text" class="input-text" maxlength="500"
             placeholder="Digite o texto aqui" required autofocus>
 
         <div class="container-button">
-            <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULA</button>
-            <button type="button" class="btn" id="btnMinuscula">minúscula</button>
+            <button type="button" class="btn" id="btnMaiuscula">
+                tT
+            </button>
+            <button type="button" class="btn" id="btnMinuscula">
+                tt
+            </button>
+            <!-- Primeira Letra Maiúscula -->
+            <button type="button" class="btn" id="btnCapitalizar">
+                Tt
+            </button>
+            <!-- Limpar -->
+            <button type="button" class="btn" id="btnLimpar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+            </button>
+            <button id="btnTema" class="btnTema">🌛</button>
         </div>
 
-        <textarea name="result" id="result" class="result" rows="5" placeholder="Resultado" disabled></textarea>
+        <textarea name="result" id="result" class="result" rows="4" placeholder="Resultado" disabled></textarea>
         <p>Para mais opções, visite: </p>
         <a href="https://tiagoneves.com.br/" target="_blank">tiagoneves.com.br</a>
     </div>
