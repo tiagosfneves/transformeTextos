@@ -5,10 +5,15 @@
     font-family: "Ubuntu", sans-serif;
 }
 
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .container-pai {
     width: 200px;
     height: 200px;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,10 +37,12 @@
     width: 160px;
     padding: 1px 3px;
     margin-bottom: 5px;
+    border: 1px solid #4c4c4d;
+    background-color: #fff;
+    border-radius: 3px;
     outline: none;
 }
 
-/* Features */
 .container-button {
     width: 170px;
     margin-bottom: 5px;
@@ -45,23 +52,29 @@
 }
 
 .btn {
-    width:30px;
+    width: 30px;
     padding: 2px;
     border-radius: 2px;
     border: 1px solid #4c4c4d;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.btnTema {    
+.btnLimpar svg {
+    margin-top: 2.7px;
+}
+
+.btnTema {
     border: none;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 5px;        background-color: #f2f2f2;        transition: background-color 0.3s, color 0.3s;
 }
 
 .result {
     width: 160px;
     padding: 1px 3px;
     margin-bottom: 5px;
+    border: 1px solid #4c4c4d;
+    border-radius: 3px;
     background-color: #fff;
     outline: none;
     resize: none;
@@ -72,15 +85,7 @@ p {
 }
 
 a {
-   font-size: 0.8rem;
-}
-
-/* Configurações trocar Tema */
-body {
-    background-color: #f2f2f2;
-    color: #222;
-    font-family: "Ubuntu", sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.8rem;
 }
 
 /* Tema escuro */

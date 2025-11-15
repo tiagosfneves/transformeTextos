@@ -1,37 +1,34 @@
-//Função Maiúscula
 function transformeMaiuscula() {
-    let inputText = document.querySelector("#input-text").value;
-    document.querySelector("#result").innerHTML = inputText.toUpperCase();
-    document.querySelector("#result").style.color = "#000";
+    let inputText = document.getElementById("input-text").value;
+    document.getElementById("result").innerHTML = inputText.toUpperCase();
+    document.getElementById("result").style.color = "#000";
 }
-//Função minúscula
-function transformeMinuscula() {
-    let inputText = document.querySelector("#input-text").value;
-    document.querySelector("#result").innerHTML = inputText.toLowerCase();
-    document.querySelector("#result").style.color = "#000";
-}
-/* Função Primeira Letra Maiúscula */
-function transformePrimeiraMaiuscula() {
-    let inputText = document.querySelector("#input-text").value.toLowerCase();
 
-    // Capitaliza a primeira letra e as letras após ponto, interrogação ou exclamação
+function transformeMinuscula() {
+    let inputText = document.getElementById("input-text").value;
+    document.getElementById("result").innerHTML = inputText.toLowerCase();
+    document.getElementById("result").style.color = "#000";
+}
+
+function transformePrimeiraMaiuscula() {
+    let inputText = document.getElementById("input-text").value.toLowerCase();
+
     let textoCapitalizado = inputText.replace(/(^\s*\w|[.!?;]\s*\w)/g, (letra) => letra.toUpperCase());
     
-    document.querySelector("#result").innerHTML = textoCapitalizado;
-    document.querySelector("#result").style.color = "#000";
-}
-/* Função Limpar */
-function limpar() {
-    document.querySelector("#input-text").value = "";     // limpa o campo de entrada
-    document.querySelector("#result").innerHTML = "";     // limpa o resultado
+    document.getElementById("result").innerHTML = textoCapitalizado;
+    document.getElementById("result").style.color = "#000";
 }
 
-/* 🌗 Função Trocar Tema */
+function limpar() {
+    document.getElementById("input-text").value = "";     
+    document.getElementById("result").innerHTML = "";
+}
+
 function trocarTema() {
     const body = document.body;
     body.classList.toggle("dark-theme");
 
-    const botaoTema = document.querySelector("#btnTema");
+    const botaoTema = document.getElementById("btnTema");
     if (body.classList.contains("dark-theme")) {
         botaoTema.textContent = "☀️";
     } else {
@@ -39,15 +36,14 @@ function trocarTema() {
     }
 }
 
-/* Programa TRANSFORME texto */
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#btnMaiuscula").addEventListener("click", transformeMaiuscula);
+    document.getElementById("btnMaiuscula").addEventListener("click", transformeMaiuscula);
 
-    document.querySelector("#btnMinuscula").addEventListener("click", transformeMinuscula);
+    document.getElementById("btnMinuscula").addEventListener("click", transformeMinuscula);
 
-    document.querySelector("#btnCapitalizar").addEventListener("click", transformePrimeiraMaiuscula);
+    document.getElementById("btnCapitalizar").addEventListener("click", transformePrimeiraMaiuscula);
 
-    document.querySelector("#btnLimpar").addEventListener("click", limpar);
+    document.getElementById("btnLimpar").addEventListener("click", limpar);
 
-    document.querySelector("#btnTema").addEventListener("click", trocarTema);
+    document.getElementById("btnTema").addEventListener("click", trocarTema);
 });
