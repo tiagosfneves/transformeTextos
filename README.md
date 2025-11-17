@@ -92,6 +92,7 @@ Este projeto foi construído com tecnologias web padrão, sem a necessidade de f
 ## 👤 Autor - Tiago Neves
 
 Contato
-- [![Website](https://img.shields.io/badge/Website-Visit-green?logo=google-chrome)](htpps://tiagoneves.com.br)
 
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://linkedin.com/in/tiagosfneves)
+[![Website](https://img.shields.io/badge/Website-Visit-4287f5?logo=google-chrome)](https://www.tiagoneves.com.br)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0099FF?logo=linkedin)](https://www.linkedin.com/in/tiagosfneves)
+[![Instagram](https://img.shields.io/badge/Instagram-Profile-5837CA?logo=instagram)](https://www.instagram.com/quandovocemudatudomuda)
