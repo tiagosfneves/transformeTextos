@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tiago Neves">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons/tt-icon16.png" type="image/x-icon">
+
+    <title>Transforme Textos</title>
+</head>
+
+<body>
+    <section class="container-pai" id="container-pai">
+        <header class="cabecalho">
+            <a href="https://chromewebstore.google.com/detail/transforme-textos/jppmnagdhpbjodolgdjngnnoicigmdjo"
+                target="_blank">
+
+                <img class="logo-tt" src="icons/tt-icon48.png"
+                    alt="Logo da extensão transforme textos apenas as iniciais tt">
+
+            </a>
+            <h1 class="titulo" id="titulo">TRANSFORME textos </h1>
+        </header>
+
+        <input type="text" name="text" id="input-text" class="input-text" maxlength="500"
+            placeholder="Digite o texto aqui" required autofocus>
+
+        <div class="contador-texto" id="contador-texto">
+
+        </div>
+
+        <div class="container-button">
+            <button type="button" class="btn btn-maiuscula" id="btnMaiuscula">
+                TT
+            </button>
+            <button type="button" class="btn btn-minuscula" id="btnMinuscula">
+                tt
+            </button>
+
+            <button type="button" class="btn btn-capitalizar" id="btnCapitalizar">
+                Tt
+            </button>
+
+            <button type="button" class="btn btn-limpar" id="btnLimpar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                    <path
+                        d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+                </svg>
+            </button>
+            <button id="btnTema" class="btn btnTema">🌙</button>
+        </div>
+
+        <div class="resultado-wrapper">
+            <textarea name="resultado" id="resultado" class="resultado" rows="7" placeholder="Resultado"
+                disabled></textarea>
+
+            <button type="button" class="btn btnCopiar" id="btnCopiar">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#434343">
+                    <path
+                        d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                </svg>
+                <span id="spanCopiar">Copiar</span>
+
+            </button>
+
+        </div>
+
+
+        <footer class="rodape">
+            <p>Acesse a versão Web, <a href="https://www.tiagoneves.com.br/transformeTextos/" target="_blank">Aqui!</a>
+            </p>
+
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

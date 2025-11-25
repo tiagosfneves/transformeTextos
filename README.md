@@ -3,8 +3,7 @@
 Uma extensão simples e poderosa para o Google Chrome que formata seus textos instantaneamente.
 
 <!--
-IMPORTANTE: Grave um GIF ou um pequeno vídeo da extensão funcionando
-e substitua o link abaixo. Isso torna o README muito mais atraente!
+IMPORTANTE: Preciso Gravar um GIF ou um pequeno vídeo da extensão funcionando e adicionar aqui!
 -->
 
 ## ✨ Sobre o Projeto
@@ -29,11 +28,10 @@ Esta extensão foi criada para ser leve e rápida, oferecendo as seguintes funci
 
 Você pode instalar esta extensão de duas maneiras:
 
-- (Recomendado) Via Chrome Web Store
+- (Recomendado) Acesse: 
+[Chrome Web Store](https://chromewebstore.google.com/detail/transforme-textos/jppmnagdhpbjodolgdjngnnoicigmdjo)
 
-<Em produção…>
-
-- Localmente (Modo Desenvolvedor)
+- (Modo Desenvolvedor) Localmente
 
 Se você quiser testar ou modificar o código, pode instalá-la localmente:
 
@@ -77,6 +75,8 @@ git clone https://github.com/tiagosfneves/transformeTexto.git
 
 6. Clique no ícone 🌙/☀️ para alternar o tema do popup.
 
+7. Clique no botão copiar para guardar o texto editado na área de transferência do S.O.
+
 ## 💻 Tecnologias Utilizadas
 
 Este projeto foi construído com tecnologias web padrão, sem a necessidade de frameworks, para garantir a máxima leveza e velocidade.
@@ -89,10 +89,31 @@ Este projeto foi construído com tecnologias web padrão, sem a necessidade de f
 
 - Google Chrome API (Manifest V3)
 
+
+## 📋 Controle de versão
+
+A extensão inicialmente oferecia apenas duas funções: transformar textos em maiúsculas ou minúsculas.
+
+Na versão 4.0, foram adicionadas as seguintes melhorias:
+
+- Atualização automática pela Chrome Web Store;
+
+- Ampliação e melhoria do layout;
+
+- Acesso direto à versão Web da extensão;
+
+- Botão Copiar, otimizado para uso em celulares;
+
+- Destaque no campo de entrada quando em foco;
+
+- Destaque nos botões ao navegar pelo teclado ou ao aproximar o mouse.
+
+
 ## 👤 Autor - Tiago Neves
 
 Contato
 
+[![Website](https://img.shields.io/badge/Extensão-Baixar-87f522?logo=google)](https://chromewebstore.google.com/detail/transforme-textos/jppmnagdhpbjodolgdjngnnoicigmdjo)
 [![Website](https://img.shields.io/badge/Website-Visit-4287f5?logo=google-chrome)](https://www.tiagoneves.com.br)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0099FF?logo=linkedin)](https://www.linkedin.com/in/tiagosfneves)
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-5837CA?logo=instagram)](https://www.instagram.com/quandovocemudatudomuda)

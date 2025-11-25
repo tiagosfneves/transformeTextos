@@ -1,3 +1,15 @@
+/* Variaveis das cores */
+:root {
+    --brancoPrimario: #F2F2F2;
+    --brancoSecundaria: #FFF;
+    --brancoTerciario: #f0f8ff;
+    --pretoPrimario: #000;
+    --pretoSecundario: #111;
+    --cinzaSecundaria: #4c4c4d;
+    --azulSecundario: #3C98C1;
+}
+
+/* Reset da Página */
 * {
     margin: 0;
     padding: 0;
@@ -5,99 +17,212 @@
     font-family: "Ubuntu", sans-serif;
 }
 
-body {
-    background-color: #f2f2f2;
-    color: #222;
+/* Configurações Padrão da Página */
+/* Configurações do Tema escuro */
+#container-pai.dark-theme {
+    background-color: var(--pretoSecundario);
+    color: var(--brancoSecundaria);
+
     transition: background-color 0.3s, color 0.3s;
 }
 
+.dark-theme .btnTema {
+    background-color: var(--pretoSecundario);
+}
+
+.dark-theme .contador-texto {
+    color: var(--brancoSecundaria);
+}
+
+/* Layout Principal da Extensão */
 .container-pai {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: auto;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--brancoSecundaria);
 }
 
+/* Cabecalho */
 .cabecalho {
+    width: 80%;
+    margin: 1rem 0;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-    margin: 5px;
+    gap: .625rem;
 }
 
+/* Logo */
+.logo-tt {
+    height: 2rem;
+}
+
+/* Título */
 .titulo {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
+/* Demais Conteúdos */
+/* Input */
 .input-text {
-    width: 160px;
-    padding: 1px 3px;
-    margin-bottom: 5px;
-    border: 1px solid #4c4c4d;
-    background-color: #fff;
-    border-radius: 3px;
+    width: 80%;
+    font-size: 1.3rem;
+
+    margin-bottom: .625rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
     outline: none;
 }
 
-.container-button {
-    width: 170px;
-    margin-bottom: 5px;
-    gap: 5px;
-    display: flex;
-    justify-content: center;
+/* Configurações (TAB) para Incluir focus no Input e nos Buttons  */
+input:focus,
+.btn:focus-visible {
+    background-color: var(--brancoTerciario);
+    border: solid .187rem var(--azulSecundario);
+    box-shadow: 0 0 .312rem rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+input:focus-visible {
+    transform: scale(1.01);
+}
+
+.btn:focus-visible {
+    transform: scale(1.03);
 }
 
 .btn {
-    width: 30px;
-    padding: 2px;
-    border-radius: 2px;
-    border: 1px solid #4c4c4d;
-    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.btnLimpar svg {
-    margin-top: 2.7px;
+/* Configurações (MOUSE) para Incluir hover nos Buttons */
+.btn:hover {
+    background-color: var(--brancoTerciario);
+    border: solid .187rem var(--azulSecundario);
+    box-shadow: 0 0 .312rem rgba(0, 123, 255, 0.5);
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Contador de caracteres */
+.contador-texto {
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    color: var(--corSecundaria);
+    text-align: center;
+}
+
+/* Configurações do Agrupamento dos Botões */
+.container-button {
+    width: 80%;
+    margin-bottom: 1.25rem;
+    gap: .312rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 80%;
+    height: 3.75rem;
+
+    font-size: 1.3rem;
+    padding: .5rem;
+    border-radius: .312rem;
+    border: .0625rem solid var(--cinzaSecundaria);
+    cursor: pointer;
+    margin-bottom: .187rem;
+}
+
+.btn-limpar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .312rem;
+}
+
+.btn-limpar svg {
+    width: 25px;
+    height: 25px;
+    margin-bottom: .125rem;
 }
 
 .btnTema {
+    width: 80%;
+    height: 60px;
+
     border: none;
-    cursor: pointer;
-    margin-bottom: 5px;        background-color: #f2f2f2;        transition: background-color 0.3s, color 0.3s;
+    padding: 0 0 10px;
+    font-size: 2rem;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.result {
-    width: 160px;
-    padding: 1px 3px;
-    margin-bottom: 5px;
-    border: 1px solid #4c4c4d;
-    border-radius: 3px;
-    background-color: #fff;
+.resultado-wrapper {
+    width: 80%;
+    position: relative;
+}
+
+.btnCopiar {
+    font-size: .9rem;
+    margin: .3125rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 100;
+
+    border: none;
+    width: fit-content;
+    color: var(--cinzaSecundaria);
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+}
+
+/* Configurações do Resultado (SAÍDA) */
+.resultado {
+    width: 100%;
+    background-color: var(--brancoSecundaria);
+
+    margin-bottom: .625rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+
+    border-radius: 0.3rem;
+    border: .125rem solid var(--cinzaSecundaria);
     outline: none;
     resize: none;
 }
 
-p {
-    font-size: 0.8rem;
+/* Rodape */
+footer {
+    width: 90%;
+    margin-top: .625rem;
+    font-size: .9rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .321rem;
 }
 
-a {
-    font-size: 0.8rem;
+.rodape a {
+    /* text-decoration: none; */
+    color: var(--azulSecundario);
+
 }
 
-/* Tema escuro */
-body.dark-theme {
-    background-color: #222;
-    color: #f2f2f2;
-}
-
-.dark-theme .btnTema {
-    background-color: #222;
-}
-
-.dark-theme a {
-    color: #0088e8;
+.rodape {
+    margin-bottom: 1rem;
 }

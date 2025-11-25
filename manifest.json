@@ -1,10 +1,10 @@
 {
   "name": "Transforme Textos",
-  "version": "2.0",
+  "version": "4.0",
   "manifest_version": 3,
-  "description": "O Transforme Textos é uma extensão para Google Chrome (Manifest V3) projetada para agilizar seu fluxo de trabalho de escrita. Com um clique no ícone da barra de ferramentas, você pode rapidamente converter qualquer trecho de texto para maiúsculas, minúsculas ou uma capitalização inteligente (estilo de sentença), sem precisar sair da sua aba atual.",  
+  "description": "O Transforme Textos é uma extensão para Google Chrome projetada para agilizar seu fluxo de trabalho de escrita. Com um clique você rapidamente converter qualquer trecho de texto para maiúsculas, minúsculas ou capitaliza, sem precisar sair da sua aba atual.",  
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/tt-icon16.png",
       "48": "icons/tt-icon48.png",
